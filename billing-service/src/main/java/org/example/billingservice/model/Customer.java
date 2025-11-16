@@ -1,4 +1,4 @@
-package org.example.billingservice.entities;
+package org.example.billingservice.model;
 
 
 import lombok.Getter;

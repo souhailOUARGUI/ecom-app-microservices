@@ -3,6 +3,7 @@ package org.example.billingservice.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.example.billingservice.model.Product;
 
 @Entity
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter @Builder
@@ -19,6 +20,6 @@ public class ProductItem {
     private int quantity;
     private double unitPrice;
 
-
-
+    @Transient
+    private Product product;
 }

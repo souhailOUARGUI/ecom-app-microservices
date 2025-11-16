@@ -3,7 +3,7 @@ package org.example.billingservice.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+import org.example.billingservice.model.Customer;
 
 import java.util.ArrayList;
 import java.util.Date;

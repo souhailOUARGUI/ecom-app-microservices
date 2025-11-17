@@ -40,8 +40,6 @@ public class BillingServiceApplication {
             Collection<Customer> customers =  customerRestClient.getAllCustomers().getContent();
             Collection<Product> products = productRestClient.getAllProducts().getContent();
 
-
-
             customers.forEach(customer -> {
 
                 System.out.println("Customer ID: " + customer.getId());

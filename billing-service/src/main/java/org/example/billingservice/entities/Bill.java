@@ -17,6 +17,8 @@ public class Bill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date billingDate;
+
+    @Column(name = "customer_id")
     private Long customerId;
     @OneToMany(mappedBy = "bill")
     private List<ProductItem> productItems = new ArrayList<>();

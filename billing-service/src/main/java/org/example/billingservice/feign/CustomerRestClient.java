@@ -7,7 +7,7 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient
+@FeignClient(name = "customer-service")
 public interface CustomerRestClient {
     @GetMapping("/customers/{id}")
      Customer getCustomerById(@PathVariable String id);
